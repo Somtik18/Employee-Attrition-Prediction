@@ -1,0 +1,170 @@
+DATASET SUMMARY
+
+Total Employees: 1470
+
+Employees Retained (No): 1233
+
+Employees Left (Yes): 237
+
+Attrition Rate: 16.12%
+
+
+
+OVERTIME ANALYSIS
+
+Employees without overtime:
+Stayed = 944
+Left = 110
+Attrition Rate = 10.44%
+
+Employees with overtime:
+Stayed = 289
+Left = 127
+Attrition Rate = 30.53%
+
+
+FINDING 3: JOB SATISFACTION ANALYSIS
+
+Job Satisfaction Level 1:
+Stayed = 223
+Left = 66
+Attrition Rate = 22.84%
+
+Job Satisfaction Level 2:
+Stayed = 234
+Left = 46
+Attrition Rate = 16.43%
+
+Job Satisfaction Level 3:
+Stayed = 369
+Left = 73
+Attrition Rate = 16.52%
+
+Job Satisfaction Level 4:
+Stayed = 407
+Left = 52
+Attrition Rate = 11.33%
+
+Conclusion:
+Employees with lower job satisfaction are more likely to leave the company.
+
+
+FINDING 4: MONTHLY INCOME ANALYSIS
+
+Average Monthly Income (Stayed):
+6832.74
+
+Average Monthly Income (Left):
+4787.09
+
+Difference:
+2045.65
+
+Conclusion:
+Employees who left the company earned considerably less on average than employees who remained.
+
+FINDING 5: AGE ANALYSIS
+
+Average Age (Stayed):
+37.56 years
+
+Average Age (Left):
+33.61 years
+
+Difference:
+3.95 years
+
+Conclusion:
+Employees who left the company were younger on average than employees who remained.
+
+FINDING 6: DISTANCE FROM HOME ANALYSIS
+
+Average Distance (Stayed):
+8.92
+
+Average Distance (Left):
+10.63
+
+Difference:
+1.71
+
+Conclusion:
+Employees who lived farther from work were slightly more likely to leave the company.
+
+Employees who work overtime are significantly more likely to leave the company.
+
+
+FINDING 2: OVERTIME ANALYSIS
+
+Employees without overtime:
+Stayed = 944
+Left = 110
+Attrition Rate = 10.44%
+
+Employees with overtime:
+Stayed = 289
+Left = 127
+Attrition Rate = 30.53%
+
+Conclusion:
+Employees who work overtime are significantly more likely to leave the company.
+
+
+FINDING 8
+Age  -5.150e-02
+FINDING 9
+MonthlyIncome  -1.126e-04
+
+FINDING 10: LOGISTIC REGRESSION MODEL
+
+Confusion Matrix:
+
+            Actual
+Predicted    No   Yes
+No          364   65
+Yes           2   10
+
+Accuracy:
+84.81%
+
+Conclusion:
+The Logistic Regression model correctly classified approximately 84.8% of employees.
+
+FINDING 11: MODEL COMPARISON
+
+Logistic Regression Accuracy:
+84.81%
+
+Decision Tree Accuracy:
+83.67%
+
+Conclusion:
+Logistic Regression performed slightly better than Decision Tree on the employee attrition dataset.
+
+FINDING 12: RANDOM FOREST MODEL
+
+Confusion Matrix:
+
+            Actual
+Predicted    No   Yes
+No          352   62
+Yes          14   13
+
+Accuracy:
+82.77%
+
+Conclusion:
+Random Forest achieved an accuracy of 82.77%, which was lower than Logistic Regression and Decision Tree for this dataset.
+
+FINDING 13: FEATURE IMPORTANCE ANALYSIS
+
+Feature Importance Ranking:
+
+1. MonthlyIncome      = 96.94
+2. Age                = 59.46
+3. DistanceFromHome   = 51.05
+4. JobSatisfaction    = 22.94
+5. OverTime           = 20.03
+
+Conclusion:
+Monthly Income was the strongest predictor of employee attrition, followed by Age and Distance From Home.
